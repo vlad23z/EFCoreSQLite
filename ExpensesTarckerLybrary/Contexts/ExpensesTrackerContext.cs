@@ -1,14 +1,9 @@
-﻿using ConsoleApp25_11_2024.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ExpensesTrackerLibrary.Models;
+
 using Microsoft.EntityFrameworkCore;
 
 
-namespace ConsoleApp25_11_2024.Contexts
+namespace ExpensesTrackerLibrary.Contexts
 {
     public class ExpensesTrackerContext : DbContext 
     {

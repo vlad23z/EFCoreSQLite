@@ -1,14 +1,10 @@
-﻿using ConsoleApp25_11_2024.Contexts;
-using ConsoleApp25_11_2024.Models;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ExpensesTrackerLibrary.Models;
+using ExpensesTrackerLibrary.Contexts;
 
-namespace ConsoleApp25_11_2024.Repositories
+using Microsoft.EntityFrameworkCore;
+
+
+namespace ExpensesTrackerLibrary.Repositories
 {
     public class ExpenseRepository
     {

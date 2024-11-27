@@ -1,6 +1,6 @@
-﻿using ConsoleApp25_11_2024.Contexts;
-using ConsoleApp25_11_2024.Models;
-using ConsoleApp25_11_2024.Repositories;
+﻿using ExpensesTrackerLibrary.Contexts;
+using ExpensesTrackerLibrary.Models;
+using ExpensesTrackerLibrary.Repositories;
 
 internal class Program
 {
