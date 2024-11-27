@@ -1,5 +1,6 @@
 ﻿using ConsoleApp25_11_2024.Contexts;
 using ConsoleApp25_11_2024.Models;
+using ConsoleApp25_11_2024.Repositories;
 
 internal class Program
 {
@@ -7,25 +8,24 @@ internal class Program
     {
         using (var context = new ExpensesTrackerContext()) {
 
-            //context.Categories.Add(new Category { Name="Food" });
-            //context.Categories.Add(new Category { Name="Transportation" });
+            var repo = new ExpenseRepository(context);
 
-            //context.SaveChanges();
+            var categories =repo.GetAllCategories();
 
 
-            context.Expenses.Add(new Expense
+
+            repo.AddExpense(new Expense
             {
-                Date= DateTime.Now, 
-                Amount=50,
-                Description="Diner",
-                Category=context.Categories.FirstOrDefault()
+                Date = DateTime.Now,
+                Amount = 12,
+                Description = "Taxi",
+                Category =categories.Skip(1).FirstOrDefault()
 
             });
+
+            
         
-        context.SaveChanges();
-        
-            var expenses=context.Expenses.ToList();
-            foreach (var expense in expenses)
+            foreach(var expense in repo.GetAllExpenses()) 
             {
                 Console.WriteLine($"Date: {expense.Date}, Amount: {expense.Amount}, Description: {expense.Description}, Category: {expense.Category.Name}");
             }
@@ -33,6 +33,6 @@ internal class Program
         }
 
 
->>>>>>> Stashed changes
+
     }
 }
