@@ -60,6 +60,13 @@ namespace ExpensesTrackerLibrary.Repositories
             }
         }
 
+        public void DeleteCategories(List<Category> categories)
+        {
+            _context.Categories.RemoveRange(categories);
+            _context.SaveChanges();
+            
+        }
+
         public IEnumerable<Expense> GetAllExpenses()
         {
             return _context.Expenses.ToList();

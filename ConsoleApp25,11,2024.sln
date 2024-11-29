@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp25,11,2024", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpensesTrackerApplication", "ExpensesTrackerApplication\ExpensesTrackerApplication.csproj", "{A4243575-99A0-4813-99C9-12FA2B17F812}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpensesTarckerLibrary", "ExpensesTarckerLybrary\ExpensesTarckerLibrary.csproj", "{3832CFAB-45C9-4811-A497-CD2D6AAA9A13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A4243575-99A0-4813-99C9-12FA2B17F812}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4243575-99A0-4813-99C9-12FA2B17F812}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4243575-99A0-4813-99C9-12FA2B17F812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3832CFAB-45C9-4811-A497-CD2D6AAA9A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3832CFAB-45C9-4811-A497-CD2D6AAA9A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3832CFAB-45C9-4811-A497-CD2D6AAA9A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3832CFAB-45C9-4811-A497-CD2D6AAA9A13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
